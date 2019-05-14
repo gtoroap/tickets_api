@@ -1,5 +1,5 @@
 puts "Creating users..."
-User.create(username: 'gtoroap', pin_code: '1234', name: 'Gustavo', last_name: 'Toro', email: 'gtoroap@gmail.com')
+User.create(username: 'gtoroap', password: '1234', name: 'Gustavo', last_name: 'Toro', email: 'gtoroap@gmail.com')
 puts "Creating users... Done"
 
 puts "Creating tickets..."

@@ -1,10 +1,10 @@
 class AuthenticateUser
-  def initialize(username, pin_code)
+  def initialize(username, password)
     @username = username
-    @pin_code = pin_code
+    @password = password
   end
 
-  attr_reader :username, :pin_code
+  attr_reader :username, :password
 
   def call
     JsonWebToken.encode(user_id: user.id) if valid_user?
@@ -13,11 +13,10 @@ class AuthenticateUser
   private
 
   def valid_user?
-    user&.authenticate(pin_code)
+    user&.authenticate(password)
   end
 
   def user
     User.find_by(username: username)
   end
-
 end
