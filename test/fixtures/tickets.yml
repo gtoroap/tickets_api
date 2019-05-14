@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  price: MyString
+  seat: MyString
+  location: MyString
+  venue: MyString
+  valid_from: 2019-05-14 06:33:26
+  valid_until: 2019-05-14 06:33:26
+
+two:
+  price: MyString
+  seat: MyString
+  location: MyString
+  venue: MyString
+  valid_from: 2019-05-14 06:33:26
+  valid_until: 2019-05-14 06:33:26
