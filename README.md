@@ -1,24 +1,17 @@
-# README
+# Tickets API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This API was created for only testing purpose. Basically, it will let a user request a ticket and see their status.
 
-Things you may want to cover:
+Endpoints:
 
-* Ruby version
+* /users/login
 
-* System dependencies
+This will let authenticate users using JWT.
 
-* Configuration
+* /tickets
 
-* Database creation
+This will show all tickets by user.
 
-* Database initialization
+* /tickets/:id
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This will show a specific ticket by user.
