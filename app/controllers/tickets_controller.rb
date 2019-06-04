@@ -13,6 +13,6 @@ class TicketsController < ApplicationController
   private
 
   def set_ticket
-    @ticket = current_user.tickets.find(params[:id])
+    @ticket = current_user.tickets.find(params[:id]) if params[:id]
   end
 end

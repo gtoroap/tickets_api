@@ -24,6 +24,5 @@ module ExceptionHandler
 
   def unauthorized_request(e)
     json_response({ message: e.message }, :unauthorized)
-    render json: { message: e.message }, status: :unauthorized
   end
 end
